@@ -24,11 +24,11 @@ terraform {
 
   #Terraform state file stored in S3 bucket
 
-  # backend "s3" {
-  #   bucket = "infra-automation-state-file"
-  #   key    = "com-terraform-state-file"
-  #   region = "us-east-1"
-  # }
+  backend "s3" {
+    bucket = "infra-automation-state-file"
+    key    = "com-terraform-state-file"
+    region = "us-east-1"
+  }
 
 }
 
